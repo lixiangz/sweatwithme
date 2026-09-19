@@ -116,7 +116,7 @@ export default function App() {
               >
                 <span className="strip-dow">{fmtShort(d.date).dow}</span>
                 <span className="strip-num">{fmtShort(d.date).d}</span>
-                <span className={`strip-dot bg-${done ? 'olive' : d.accent}`} />
+                <span className={`strip-dot accent-${d.accent}${done ? ' is-filled' : ''}`} />
               </button>
             )
           })}

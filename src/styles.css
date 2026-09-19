@@ -95,7 +95,9 @@ button { font-family: inherit; color: inherit; cursor: pointer; }
 .strip-day.is-current { border-color: var(--orange); background: var(--surf2); }
 .strip-dow { font-family: var(--display); font-size: 9px; letter-spacing: 1px; color: var(--dim); }
 .strip-num { font-family: var(--display); font-size: 16px; font-weight: 500; line-height: 1; }
-.strip-dot { width: 7px; height: 7px; border-radius: 7px; }
+/* hue = session type, fill = done. Never encode both on the same channel. */
+.strip-dot { width: 8px; height: 8px; border-radius: 8px; border: 1.5px solid currentColor; }
+.strip-dot.is-filled { background: currentColor; }
 .strip-day.is-done .strip-num { color: var(--dim); }
 
 /* ---------- session card ---------- */
