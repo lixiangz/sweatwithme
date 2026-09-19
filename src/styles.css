@@ -17,8 +17,8 @@
   --body: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
 
   box-sizing: border-box;
-  padding-top: env(safe-area-inset-top, 0px);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
+  /* safe-area insets live on .topbar / .footer only — applying them here too
+     double-counted the notch in standalone (home-screen) mode */
   background: var(--bg);
   color-scheme: dark;
 }
